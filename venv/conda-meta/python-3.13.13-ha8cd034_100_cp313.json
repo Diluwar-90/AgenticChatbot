@@ -1986,7 +1986,7 @@
         "path_type": "hardlink",
         "sha256": "3c7a0750958e47287a7d132b9229c7b542872e4510a3473efce12464e80127d3",
         "size_in_bytes": 6164480,
-        "sha256_in_prefix": "b05aae21607c475ab467182fd55421a32e37d13ffa816def78ebb54d56efeb6c"
+        "sha256_in_prefix": "7ee2579de9f2cb3aaaf0142469b3201a2bd23bad077b4512610784b73a395ee5"
       },
       {
         "_path": "bin/python3.13-config",
@@ -3852,7 +3852,7 @@
         "path_type": "hardlink",
         "sha256": "84a278ba01bdc005c7a71596ee698021f58de332194d876d9eacf9bfd5259882",
         "size_in_bytes": 6178784,
-        "sha256_in_prefix": "0a36ba9502831e46f517c487adc5183c2f6653792253df631cea5aa8a0e6004a"
+        "sha256_in_prefix": "feaa50d7eb16e36c50638b2ecea7a46aab412b332583891475cd92aa1eb6182c"
       },
       {
         "_path": "lib/pkgconfig/python-3.13-embed.pc",

@@ -1218,7 +1218,7 @@
         "path_type": "hardlink",
         "sha256": "3f1150d08979509e2840247c80838f5d78aa262ce817e6763b5e10f3ff0d26ea",
         "size_in_bytes": 4904512,
-        "sha256_in_prefix": "caa9de232def8712f3fcaec4dd11263e3d4035910eaf78859111dd1389b26376"
+        "sha256_in_prefix": "2c04d491948989788c5b1c79dd83b9f03a7b24f0b7813c13184e1e78c3b1b3e8"
       },
       {
         "_path": "lib/libcrypto.a",
