@@ -23,7 +23,14 @@ def load_langgraph_agenticai_app():
         st.error("Error: Failed to load user input from the UI.")
         return
 
-    user_message = st.chat_input("Enter your message:")
+    usecase = user_input.get("selected_usecase")
+
+    # Chat input is only shown for the two non-news modes.
+    # AI News uses the dedicated fetch button and timeframe selector instead.
+    if usecase == "AI News":
+        user_message = st.session_state.get("timeframe", "")
+    else:
+        user_message = st.chat_input("Enter your message:")
 
     if user_message:
         try:
@@ -36,8 +43,6 @@ def load_langgraph_agenticai_app():
                 return
 
             # Initialize and set up the graph based on use case
-            usecase = user_input.get("selected_usecase")
-
             if not usecase:
                 st.error("Error: No use case selected.")
                 return
@@ -47,7 +52,8 @@ def load_langgraph_agenticai_app():
             graph_builder = GraphBuilder(model)
             try:
                 graph = graph_builder.setup_graph(
-                    usecase, tavily_api_key=user_input.get("TAVILY_API_KEY")
+                    usecase,
+                    tavily_api_key=user_input.get("TAVILY_API_KEY"),
                 )
                 print(user_message)
                 DisplayResultStreamlit(
